@@ -4,7 +4,7 @@
   "description": "Interview Questions",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require babel-core/register src/**/*.test.js",
+    "test": "mocha src/**/*.test.js",
     "test:watch": "npm run test -- --watch"
   },
   "repository": {
@@ -19,10 +19,6 @@
   "homepage": "https://github.com/functionhang10/interview-questions#readme",
   "dependencies": {},
   "devDependencies": {
-    "@babel/cli": "7.4.4",
-    "@babel/core": "7.4.5",
-    "@babel/preset-env": "7.4.5",
-    "babel-register": "6.26.0",
     "chai": "4.2.0",
     "mocha": "6.1.4"
   }
