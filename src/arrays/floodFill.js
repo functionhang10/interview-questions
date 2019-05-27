@@ -1,7 +1,6 @@
 const floodFill = (img, targetRow, targetCol, newColor) => {
   if (img[targetRow][targetCol] === newColor) return;
   recurisveFill(img, targetRow, targetCol, img[targetRow][targetCol], newColor);
-  return img;
 };
 
 const recurisveFill = (img, row, col, oldColor, newColor) => {
@@ -20,5 +19,4 @@ const recurisveFill = (img, row, col, oldColor, newColor) => {
   recurisveFill(img, row - 1, col, oldColor, newColor); // top
 };
 
-module.exports = floodFill;
-// export default floodFill;
+module.exports = floodFill
